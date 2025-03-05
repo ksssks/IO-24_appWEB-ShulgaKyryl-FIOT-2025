@@ -2,11 +2,15 @@ import logo from './svg/logo.svg'
 import profile from './svg/profile.svg'
 import dropdown from './svg/dropdown.svg'
 import arrow_icon from './svg/arrow_icon.svg'
+import verify_icon from './svg/verify_icon.svg'
+import info_icon from './svg/info_icon.svg'
 
 import profile_img from './img/profile.png'
 import group_profile from './img/group_profile.png'
 import header_img from './img/header_img.png'
 import pointing_doctor from './img/pointing_doctor.png'
+import man_check from './img/man_check.jpg'
+
 
 import General_physician from './img/doctor_vectors/General_physician.png'
 import Hirurg from './img/doctor_vectors/Hirurg.png'
@@ -54,7 +58,10 @@ export const assets = {
     pointing_doctor,
     twitter,
     instagram,
-    facebook
+    facebook,
+    verify_icon,
+    info_icon,
+    man_check
 }
 
 export const specialityData = [
@@ -105,11 +112,12 @@ export const doctors =
             _id: 'doc1',
             name: 'Егор Шульга',
             image: doc1,
-            speciality: 'Дантист',
+            speciality: 'dentist',
+            ukr_speciality: 'Дантист',
             degree: 'Кандидат медичних наук',
             experience: '10 років',
             about: 'Спеціалізується на лікуванні зубних захворювань та естетичній стоматології.',
-            fees: '500 грн за консультацію',
+            fees: '500',
             address: {
                 line1: 'м. Київ, вул. Миру, 15',
                 line2: 'м. Харків, вул. Наукова, 12'
@@ -119,11 +127,12 @@ export const doctors =
             _id: 'doc2',
             name: 'Олена Коваль',
             image: doc2,
-            speciality: 'Лікар загальної практики',
+            speciality: 'general_physician',
+            ukr_speciality: 'Лікар загальної практики',
             degree: 'Доктор медичних наук',
             experience: '15 років',
             about: 'Надає консультації та медичну допомогу для пацієнтів будь-якого віку.',
-            fees: '400 грн за консультацію',
+            fees: '400',
             address: {
                 line1: 'м. Львів, вул. Грушевського, 20',
                 line2: 'м. Одеса, вул. Приморська, 5'
@@ -133,11 +142,12 @@ export const doctors =
             _id: 'doc3',
             name: 'Василь Дорошенко',
             image: doc3,
-            speciality: 'Кардіолог',
+            speciality: 'cardiologist',
+            ukr_speciality: 'Кардіолог',
             degree: 'Магістр медичних наук',
             experience: '8 років',
             about: 'Фахівець у сфері лікування серцево-судинних захворювань.',
-            fees: '550 грн за консультацію',
+            fees: '550',
             address: {
                 line1: 'м. Дніпро, вул. Центральна, 10',
                 line2: 'м. Київ, вул. Базарна, 3'
@@ -147,11 +157,12 @@ export const doctors =
             _id: 'doc4',
             name: 'Наталія Ткачук',
             image: doc4,
-            speciality: 'Педіатр',
+            speciality: 'pediatrician',
+            ukr_speciality: 'Педіатр',
             degree: 'Доктор медичних наук',
             experience: '12 років',
             about: 'Фахівець з лікування дитячих захворювань.',
-            fees: '300 грн за консультацію',
+            fees: '300',
             address: {
                 line1: 'м. Вінниця, вул. Лесі Українки, 45',
                 line2: 'м. Полтава, вул. Сумська, 7'
@@ -161,11 +172,12 @@ export const doctors =
             _id: 'doc5',
             name: 'Іван Мельник',
             image: doc5,
-            speciality: 'Хірург',
+            speciality: 'surgeon',
+            ukr_speciality: 'Хірург',
             degree: 'Кандидат медичних наук',
             experience: '9 років',
             about: 'Виконує складні хірургічні операції.',
-            fees: '700 грн за консультацію',
+            fees: '700',
             address: {
                 line1: 'м. Запоріжжя, вул. Перемоги, 22',
                 line2: 'м. Чернівці, вул. Богдана Хмельницького, 9'
@@ -175,11 +187,12 @@ export const doctors =
             _id: 'doc6',
             name: 'Марія Степаненко',
             image: doc6,
-            speciality: 'Гінеколог',
+            speciality: 'gynecologist',
+            ukr_speciality: 'Гінеколог',
             degree: 'Магістр медичних наук',
             experience: '11 років',
             about: 'Спеціаліст з жіночого здоров\'я.',
-            fees: '450 грн за консультацію',
+            fees: '450',
             address: {
                 line1: 'м. Тернопіль, вул. Київська, 8',
                 line2: 'м. Рівне, вул. Шевченка, 14'
@@ -189,11 +202,12 @@ export const doctors =
             _id: 'doc7',
             name: 'Андрій Пономаренко',
             image: doc7,
-            speciality: 'Реабілітолог',
+            speciality: 'rehabilitation',
+            ukr_speciality: 'Реабілітолог',
             degree: 'Магістр медичних наук',
             experience: '7 років',
             about: 'Допомагає пацієнтам з фізичною реабілітацією після травм.',
-            fees: '600 грн за консультацію',
+            fees: '600',
             address: {
                 line1: 'м. Черкаси, вул. Гоголя, 6',
                 line2: 'м. Суми, вул. Пушкіна, 2'
@@ -203,11 +217,12 @@ export const doctors =
             _id: 'doc8',
             name: 'Юлія Богдан',
             image: doc8,
-            speciality: 'Психолог',
+            speciality: 'psychologist',
+            ukr_speciality: 'Психолог',
             degree: 'Кандидат психологічних наук',
             experience: '10 років',
             about: 'Займається психологічним консультуванням та терапією.',
-            fees: '500 грн за консультацію',
+            fees: '500',
             address: {
                 line1: 'м. Київ, вул. Франка, 30',
                 line2: 'м. Львів, вул. Шота Руставелі, 17'
@@ -217,7 +232,8 @@ export const doctors =
             _id: 'doc9',
             name: 'Павло Зінченко',
             image: doc9,
-            speciality: 'Кардіолог',
+            speciality: 'cardiologist',
+            ukr_speciality: 'Кардіолог',
             degree: 'Доктор медичних наук',
             experience: '14 років',
             about: 'Проводить лікування та профілактику серцевих захворювань.',
@@ -231,11 +247,12 @@ export const doctors =
             _id: 'doc10',
             name: 'Світлана Гаврилюк',
             image: doc10,
-            speciality: 'Дантист',
+            speciality: 'dentist',
+            ukr_speciality: 'Дантист',
             degree: 'Магістр медичних наук',
             experience: '6 років',
             about: 'Проводить лікування зубів та займається профілактикою стоматологічних захворювань.',
-            fees: '400 грн за консультацію',
+            fees: '400',
             address: {
                 line1: 'м. Ужгород, вул. Незалежності, 4',
                 line2: 'м. Івано-Франківськ, вул. Січових Стрільців, 21'
@@ -245,11 +262,12 @@ export const doctors =
             _id: 'doc11',
             name: 'Олександр Романюк',
             image: doc11,
-            speciality: 'Лікар загальної практики',
+            speciality: 'general_physician',
+            ukr_speciality: 'Лікар загальної практики',
             degree: 'Кандидат медичних наук',
             experience: '12 років',
             about: 'Проводить загальну діагностику та профілактичні огляди.',
-            fees: '450 грн за консультацію',
+            fees: '450',
             address: {
                 line1: 'м. Київ, вул. Хрещатик, 19',
                 line2: 'м. Дніпро, вул. Січеславська, 2'
@@ -259,11 +277,12 @@ export const doctors =
             _id: 'doc12',
             name: 'Тетяна Левчук',
             image: doc12,
-            speciality: 'Педіатр',
+            speciality: 'pediatrician',
+            ukr_speciality: 'Педіатр',
             degree: 'Магістр медичних наук',
             experience: '8 років',
             about: 'Спеціалізується на лікуванні та профілактиці дитячих хвороб.',
-            fees: '400 грн за консультацію',
+            fees: '400',
             address: {
                 line1: 'м. Харків, вул. Свободи, 21',
                 line2: 'м. Одеса, вул. Князівська, 14'
@@ -273,11 +292,12 @@ export const doctors =
             _id: 'doc13',
             name: 'Максим Василенко',
             image: doc13,
-            speciality: 'Хірург',
+            speciality: 'surgeon',
+            ukr_speciality: 'Хірург',
             degree: 'Доктор медичних наук',
             experience: '15 років',
             about: 'Виконує оперативне втручання з метою лікування різних захворювань.',
-            fees: '800 грн за консультацію',
+            fees: '800',
             address: {
                 line1: 'м. Львів, вул. Дорошенка, 8',
                 line2: 'м. Чернівці, вул. Кармелюка, 5'
@@ -287,11 +307,12 @@ export const doctors =
             _id: 'doc14',
             name: 'Ірина Снігур',
             image: doc14,
-            speciality: 'Реабілітолог',
+            speciality: 'rehabilitation',
+            ukr_speciality: 'Реабілітолог',
             degree: 'Кандидат медичних наук',
             experience: '10 років',
             about: 'Займається відновленням функцій після травм.',
-            fees: '500 грн за консультацію',
+            fees: '500',
             address: {
                 line1: 'м. Вінниця, вул. Космонавтів, 11',
                 line2: 'м. Житомир, вул. Перемоги, 16'
@@ -301,11 +322,12 @@ export const doctors =
             _id: 'doc15',
             name: 'Сергій Задорожний',
             image: doc15,
-            speciality: 'Кардіолог',
+            speciality: 'cardiologist',
+            ukr_speciality: 'Кардіолог',
             degree: 'Доктор медичних наук',
             experience: '18 років',
             about: 'Спеціаліст у сфері кардіології, займається лікуванням серцево-судинних захворювань.',
-            fees: '600 грн за консультацію',
+            fees: '600',
             address: {
                 line1: 'м. Полтава, вул. Шевченка, 9',
                 line2: 'м. Чернігів, вул. Гетьмана, 4'
@@ -315,11 +337,12 @@ export const doctors =
             _id: 'doc16',
             name: 'Ольга Мельник',
             image: doc16,
-            speciality: 'Гінеколог',
+            speciality: 'gynecologist',
+            ukr_speciality: 'Гінеколог',
             degree: 'Магістр медичних наук',
             experience: '14 років',
             about: 'Фахівець у сфері жіночого здоров\'я.',
-            fees: '450 грн за консультацію',
+            fees: '450',
             address: {
                 line1: 'м. Тернопіль, вул. Пушкіна, 10',
                 line2: 'м. Хмельницький, вул. Гончара, 7'
@@ -329,11 +352,12 @@ export const doctors =
             _id: 'doc17',
             name: 'Анна Гончар',
             image: doc17,
-            speciality: 'Психолог',
+            speciality: 'psychologist',
+            ukr_speciality: 'Психолог',
             degree: 'Кандидат психологічних наук',
             experience: '9 років',
             about: 'Надає психологічну підтримку та консультації.',
-            fees: '500 грн за консультацію',
+            fees: '500',
             address: {
                 line1: 'м. Київ, вул. Лесі Українки, 5',
                 line2: 'м. Львів, вул. Зеленська, 3'
@@ -343,11 +367,12 @@ export const doctors =
             _id: 'doc18',
             name: 'Віктор Поліщук',
             image: doc18,
-            speciality: 'Кардіолог',
+            speciality: 'cardiologist',
+            ukr_speciality: 'Кардіолог',
             degree: 'Магістр медичних наук',
             experience: '7 років',
             about: 'Проводить діагностику та лікування серцево-судинних захворювань.',
-            fees: '600 грн за консультацію',
+            fees: '600',
             address: {
                 line1: 'м. Суми, вул. Покровська, 2',
                 line2: 'м. Миколаїв, вул. Кузнецова, 9'
@@ -357,11 +382,12 @@ export const doctors =
             _id: 'doc19',
             name: 'Інна Василюк',
             image: doc19,
-            speciality: 'Педіатр',
+            speciality: 'pediatrician',
+            ukr_speciality: 'Педіатр',
             degree: 'Магістр медичних наук',
             experience: '10 років',
             about: 'Педіатр з великим досвідом роботи з дітьми різного віку.',
-            fees: '400 грн за консультацію',
+            fees: '400',
             address: {
                 line1: 'м. Івано-Франківськ, вул. Мазепи, 22',
                 line2: 'м. Ужгород, вул. Сагайдачного, 13'
@@ -371,11 +397,12 @@ export const doctors =
             _id: 'doc20',
             name: 'Богдан Шевченко',
             image: doc20,
-            speciality: 'Хірург',
+            speciality: 'surgeon',
+            ukr_speciality: 'Хірург',
             degree: 'Доктор медичних наук',
             experience: '20 років',
             about: 'Досвідчений хірург з високими професійними навичками.',
-            fees: '800 грн за консультацію',
+            fees: '800',
             address: {
                 line1: 'м. Запоріжжя, вул. Січових Стрільців, 12',
                 line2: 'м. Дніпро, вул. Набережна, 6'

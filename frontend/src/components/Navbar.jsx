@@ -13,9 +13,9 @@ const Navbar = () => {
         <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
             <img onClick={()=>navigate('/')} className='w-20 h-20 cursor-pointer' src={assets.logo} alt=''/>
             <ul className='hidden md:flex items-start gap-5 font-medium'>
-                <NavLink to={'/IO-24_appWEB-ShulgaKyryl-FIOT-2025/'}>
+                <NavLink to={'/IO-24_appWEB-ShulgaKyryl-FIOT-2025'}>
                     <li className='py-1'>Домашня</li>
-                    <hr className='border-none outine-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
+                    {/*<hr className='border-none outine-none h-0.5 bg-primary w-3/5 m-auto hidden'/>*/}
                 </NavLink>
                 <NavLink to={'/IO-24_appWEB-ShulgaKyryl-FIOT-2025/doctors'}>
                     <li className='py-1'>Усі лікарі</li>

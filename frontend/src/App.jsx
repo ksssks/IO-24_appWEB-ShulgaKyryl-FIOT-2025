@@ -5,14 +5,13 @@ import Doctors from "./pages/Doctors.jsx";
 import Login from "./pages/Login.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
-import MyProfile from "./pages/MyProfile.jsx";
+import MyProfile from "./pages/MyProfile/MyProfile.jsx";
 import MyAppointments from "./pages/MyAppointments.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import Appointment from "./pages/Appointment.jsx";
 
-function Appointment() {
-    return null;
-}
+
 
 const App = () => {
     return (
